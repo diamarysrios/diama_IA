@@ -1,0 +1,129 @@
+html,
+body {
+    background-image: url('/img/fondo.jpg');
+    height: auto;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.titulo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    padding-left: 25px;
+    padding-right: 25px;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 80px;
+}
+
+.avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+    background-color: aliceblue;
+    border-radius: 100%;
+    border: 2px gray solid;
+}
+
+.contenedor {
+    min-height: 95vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chat {
+    width: 450px;
+    height: 85vh;
+    max-height: 500px;
+    overflow: hidden;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.mensajes {
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    overflow-x: hidden
+}
+
+.mensajes {
+    scrollbar-width: thin;
+    scrollbar-color: #000000a8 #cfd8dc00;
+}
+
+.mensajes::-webkit-scrollbar-track {
+    background: #CFD8DC;
+}
+
+.mensajes::-webkit-scrollbar-thumb {
+    background-color: #90A4AE;
+    border-radius: 6px !important;
+    border: 3px solid #CFD8DC;
+}
+
+.mensaje {
+    color: #ffffff;
+    width: fit-content;
+    max-width: 70%;
+    background-color: #155231;
+    border-radius: 5px;
+    margin: 10px;
+    margin-left: 20px;
+    padding: 5px;
+    float: left;
+}
+
+.mensaje_propio {
+    color: white;
+    width: fit-content;
+    max-width: 70%;
+    background-color: #1a5074;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 5px;
+    float: right;
+    margin-left: auto;
+}
+
+.caja_mensajes {
+    width: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 80px;
+}
+
+#entrada_mensaje {
+    width: 74%;
+    height: 55%;
+    outline: none!important;
+    background: none;
+    border: none;
+    resize: none;
+    color: white;
+}
+
+#entrada_mensaje::-webkit-scrollbar {
+    display: none;
+  }
+
+#btn_enviar_mensaje {
+    width: 25%;
+    height: 35px;
+    border-radius: 15px;
+    background-color: #155231;
+    margin-left: 5px;
+    border: none;
+    color: white;
+}
