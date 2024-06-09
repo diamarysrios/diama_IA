@@ -73,7 +73,7 @@ body {
     color: #ffffff;
     width: fit-content;
     max-width: 70%;
-    background-color: #155231;
+    background: linear-gradient(to right, #4285F4, #db35ea);
     border-radius: 5px;
     margin: 10px;
     margin-left: 20px;
@@ -85,7 +85,7 @@ body {
     color: white;
     width: fit-content;
     max-width: 70%;
-    background-color: #1a5074;
+    background: linear-gradient(to right, #1976d2, #3099f2);
     border-radius: 5px;
     margin: 10px;
     padding: 5px;
@@ -101,7 +101,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.5);
-    height: 80px;
+    min-height: 80px;
 }
 
 #entrada_mensaje {
@@ -122,8 +122,9 @@ body {
     width: 25%;
     height: 35px;
     border-radius: 15px;
-    background-color: #155231;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%);;
     margin-left: 5px;
     border: none;
     color: white;
+    cursor: pointer;
 }
