@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -40,4 +41,71 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="/app.js"></script>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    
+    <div class="contenedor">
+
+        <div class="chat">
+            <!-- Titulo -->
+            <div class="titulo">
+                <div class="avatar">
+                    <img style="width: 50px; height: auto;" src="/img/google-gemini-icon.svg" alt="">
+                </div>
+                <h1>DiaIA!</h1>
+            </div>
+            <!-- /Titulo -->
+
+            <!-- Mensajes -->
+            <div class="mensajes">
+
+                <div class="mensaje">Esto</div>
+                <div class="mensaje">es una simple prueba</div>
+                <div class="mensaje">para ver como reacciona la entrada a contenido de distintos largos y tamaños</div>
+                <div class="mensaje">.</div>
+                <div class="mensaje_propio">asdasdasd</div>
+                <div class="mensaje_propio">para ver como reacciona la entrada a contenido de distintos largos y tamaños</div>
+                <div class="mensaje">Esto</div>
+                <div class="mensaje">es una simple prueba</div>
+                <div class="mensaje">para ver como reacciona la entrada a contenido de distintos largos y tamaños</div>
+                <div class="mensaje">.</div>
+                <div class="mensaje_propio">asdasdasd</div>
+                <div class="mensaje_propio">para ver como reacciona la entrada a contenido de distintos largos y tamaños</div>
+
+            </div>
+            <!-- /Mensajes -->
+
+            <!-- Caja de mensajes -->
+            <div class="caja_mensajes">
+                <textarea id="entrada_mensaje" placeholder="Escribe un mensaje..."></textarea>
+                <button id="btn_enviar_mensaje">Enviar</button>
+            </div>
+            <!-- /Caja de mensajes -->
+
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $(function() {
+            var html_area_chat = ""
+
+            $("#btn_enviar_mensaje").on("click",function(){
+                var mensaje = $("#mensaje").val()
+                html_area_chat += `<p>Usuario: ${mensaje}</p>`
+                $("#area_chat").html(html_area_chat)
+            })
+        });
+    </script>
+</body>
+>>>>>>> 686110c99a7a2cb004bf8735f37c23e97557de8d
 </html>
